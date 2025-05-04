@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Confession</title>
+    <link rel="stylesheet" href="ctf.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🕵️‍♀️ Final Puzzle — Who Sent the Confession?</h1>
+        <p>You've gathered all four clues, and now it's time to answer the ultimate question.</p>
+        
+        <p><strong>Review the Flags:</strong></p>
+        <ul>
+            <li>CTF{captain_approved} → Vega</li>
+            <li>CTF{love} → Orion</li>
+            <li>CTF{pilot_attack} → Silas</li>
+            <li>CTF{nova} → Nova</li>
+        </ul>
+
+        <p>Only one of these flags is a direct confession of love.</p>
+
+        <p><strong>Hint:</strong> Use your common sense
+
+        <p>🧠 Who sent the anonymous confession?</p>
+
+        <div class="input-container">
+            <input type="text" id="answer" class="answer-field" placeholder="Type the name here...">
+            <button onclick="checkAnswer('Orion', 'end.html')" class="submit-button">Submit Answer</button>
+        </div>
+
+        <div id="result"></div>
+
+        <!-- Hidden Next Button Section -->
+        <div id="nextButtonDiv" style="display: none;">
+            <button id="nextButton" class="submit-button">Reveal the Ending</button>
+        </div>
+    </div>
+
+    <script src="ctf.js"></script>
+</body>
+</html>
